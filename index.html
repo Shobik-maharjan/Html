@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Page</title>
+    <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+  </head>
+  <body>
+    <!-- Heading Tags -->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+
+    <!-- Paragraph Tag -->
+    <p>
+      Lorem ipsum dolor sit <strong>hello</strong> amet, consectetur adipisicing
+      elit. Dolorem in consequatur magni ad perspiciatis veniam nesciunt
+      consequuntur laudantium eligendi atque, eveniet repellat, ducimus alias
+      blanditiis odio deserunt. Ratione minima, ullam quaerat impedit assumenda
+      aspernatur recusandae eos ipsa molestiae delectus inventore a rem cum
+      aliquid, harum ex laborum voluptatibus iure dignissimos?
+    </p>
+
+    <!-- Unordered List -->
+    <ul>
+      <li>apple</li>
+      <li>banana</li>
+      <li>cat</li>
+      <li>dog</li>
+    </ul>
+
+    <!-- Ordered List -->
+    <ol>
+      <li>apple</li>
+      <li>banana</li>
+      <li>cat</li>
+      <li>dog</li>
+    </ol>
+
+    <!-- Hyperlinks -->
+    <p>
+      This is google website link:
+      <a href="https://www.google.com">www.google.com</a>
+    </p>
+    <p>
+      This is github website link:
+      <a href="https://www.github.com">www.github.com</a>
+    </p>
+    <br />
+
+    <!-- Images -->
+    <img
+      src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8fDA%3D"
+      alt="images"
+      width="400px"
+    />
+    <hr />
+
+    <button onclick="generatePDF()">Generate PDFs</button>
+
+    <script>
+      function generatePDF() {
+        var element = document.body;
+        html2pdf(element);
+      }
+    </script>
+  </body>
+</html>
