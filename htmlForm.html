@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms and Input Element</title>
+  </head>
+  <body>
+    <div>
+      <h1>HTML Forms and Input Element</h1>
+      <form action="" onsubmit="alertButton()">
+        <!-- input text -->
+        <label for="firstName">First Name: </label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          size="40"
+          placeholder="Enter Your Name"
+        /><br /><br />
+
+        <!-- input password -->
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter Your password"
+        /><br /><br />
+
+        <!-- dropdown -->
+        <label for="select">Choose a Color: </label>
+        <select id="select" name="select">
+          <option value="white">white</option>
+          <option value="green">green</option>
+          <option value="red" selected>red</option>
+          <option value="orange">orange</option>
+          <option value="blue">blue</option>
+          <option value="yellow">yellow</option>
+          <option value="maroon">maroon</option>
+          <option value="pink">pink</option></select
+        ><br /><br />
+
+        <!-- radio group -->
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="male" value="Male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="others" value="Others" />
+        <label for="others">Others</label>
+        <br /><br />
+
+        <!-- checkbox -->
+        <input type="checkbox" name="apple" id="apple" />
+        <label for="apple">apple</label><br />
+        <input type="checkbox" name="banana" id="banana" />
+        <label for="banana">banana</label><br />
+        <input type="checkbox" name="cat" id="cat" />
+        <label for="cat">cat</label><br />
+        <input type="checkbox" name="fish" id="fish" />
+        <label for="fish">fish</label><br />
+        <input type="checkbox" name="ball" id="ball" />
+        <label for="ball">ball</label><br />
+        <br />
+
+        <!-- range -->
+        <label for="number">Number between 0 to 100</label>
+        <input
+          type="range"
+          name="number"
+          id="number"
+          min="0"
+          max="100"
+        /><br /><br />
+
+        <textarea
+          name="Describe anything"
+          id="describe"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <button type="submit">submit</button>
+      </form>
+      <script>
+        function alertButton() {
+          alert("form submitted");
+        }
+      </script>
+    </div>
+  </body>
+</html>
